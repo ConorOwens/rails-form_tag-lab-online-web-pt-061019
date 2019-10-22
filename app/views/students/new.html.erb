@@ -11,6 +11,4 @@
   <%= submit_tag "Submit Student" %>
 <% end %>
 
-<% if @student %>
-  <%= @student %>
-<% end %>
+<%= session[:form_params] if session[:form_params] %>
